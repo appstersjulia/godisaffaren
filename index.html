@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <title>Godisaffären</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+<div class="background"></div>
+<div class="coin"></div>
+<div class="coin"></div>
+<div class="coin"></div>
+<div class="coin"></div>
+<div class="coin"></div>
+<div class="candy1"></div>
+<div class="candy2"></div>
+<div class="candy3"></div>
+<div class="message"></div>
+
+
+<script>
+
+ var candy1 = document.querySelector('.candy1');
+ console.log(candy1)
+ var coin = document.querySelectorAll('.coin');
+ var coinCount = coin.length-1;
+ console.log(coinCount) 
+ candy1.addEventListener("click", removeCoin);
+ function removeCoin(){
+  if (coinCount == -1){
+    var message = document.querySelector('.message');
+    message.innerHTML = "Inga pengar kvar! :(";
+    return;
+  }
+  console.log(coin[coinCount])
+  coin[coinCount].style.display = "none";
+  coinCount--;
+
+ }
+
+</script>
+
+</body>
+</html>

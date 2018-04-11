@@ -1,0 +1,41 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(background.png);
+  background-size: cover;
+  position:absolute;
+  z-index: -1;
+
+}
+
+.coin {
+  width: 100px;
+  height: 100px;
+  background-image: url(coin.png);
+  background-size: cover;
+  top:0;
+  z-index: 2;
+  
+}
+
+body {
+  margin: 0;
+  padding:0;
+}
+
+.candy1, .candy2, .candy3 {
+  position:absolute;
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+}
+
+.candy1 {
+  top:40%;
+  right: 30%;
+
+}
+.message {
+  font-size: 50px;
+  color: red;
+}
